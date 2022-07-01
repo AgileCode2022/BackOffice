@@ -1,0 +1,20 @@
+create database PruebaBD;
+use PuebaBD;
+
+create table usuario(
+   email varchar(30),
+   password varchar(255)
+);
+
+create table backoffice(
+    email varchar(30),
+    password varchar(255)
+)
+
+create table Banner2(
+id integer unsigned not null auto_increment,
+    nombre varchar(25) null,
+    imagen varchar(40) null,
+    url varchar(100) null,
+    primary key(id)
+);
