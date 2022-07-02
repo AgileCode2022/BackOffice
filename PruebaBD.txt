@@ -1,5 +1,5 @@
 create database PruebaBD;
-use PuebaBD;
+use PruebaBD;
 
 create table usuario(
    email varchar(30),
