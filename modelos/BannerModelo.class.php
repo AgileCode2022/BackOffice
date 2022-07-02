@@ -16,7 +16,7 @@ class BannerModelo extends Modelo{
     } 
     public function EliminarPublicidad(){
 
-        $query = "DELETE FROM Banner2 WHERE nombre ='" . $this -> Id . "'" ;
+        $query = "DELETE FROM Banner2 WHERE id ='" . $this -> Id . "'" ;
         $this-> conexion-> query($query);
 
     }
