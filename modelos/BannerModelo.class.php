@@ -34,10 +34,7 @@ class BannerModelo extends Modelo{
                 array_push($elementos, $u);
             }
             
-       // echo('<pre>');
-        //var_dump($elementos);
-        //echo('</pre>');
-          return  var_dump($elementos);  
+        return  var_dump($elementos);  
     }
 
     public function ObtenerImagen(){

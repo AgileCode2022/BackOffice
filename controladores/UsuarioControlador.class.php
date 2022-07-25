@@ -12,14 +12,6 @@
         
         }
 
-        public static function Autenticar($email,$password){
-            $u = new UsuarioModelo();
-            $u -> Email = $email;
-            $u -> Password = $password;
-            $u -> Autenticar();
-        
-        }
-
         public static function Eliminar($email,$password){
             $u = new UsuarioModelo();
             $u -> Email = $email;
@@ -27,13 +19,11 @@
             $u -> Eliminar();
         
         }
+       
 
-        public static function ObtenerTodos(){
-            $u = new UsuarioModelo();
-            $u -> ObtenerTodos();
         
-        }
     }
+    
 
 
     
