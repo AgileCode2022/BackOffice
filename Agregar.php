@@ -12,6 +12,9 @@ if ($tamanioImagen <= 15000000) {
     if ($tipoImagen == "image/jpeg" || $tipoImagen == "image/jpg" || $tipoImagen == "image/png") {
         $carpetaDestino = $_SERVER['DOCUMENT_ROOT'] . "/BackOffice/imagenes/";
         move_uploaded_file($_FILES['imagen']['tmp_name'], $carpetaDestino.$nombreImagen);
+        BannerControlador::InsertarPublicidad($nombre, $nombreImagen, $url);
+        echo '<script language="javascript">alert("Se guardo la publicidad en base de datos"),window.location.href="/BackOffice/Index.html"</script>';
+        //header('location:Index.html');
     }else{
         echo "solo imagenes con extencion jpg, jpeg, png...";
     }
@@ -20,6 +23,3 @@ if ($tamanioImagen <= 15000000) {
 }
 
 
-BannerControlador::InsertarPublicidad($nombre, $nombreImagen, $url);
-echo '<script language="javascript">alert("Se guardo la publicidad en base de datos"),window.location.href="/BackOffice/Index.html"</script>';
-//header('location:Index.html');
