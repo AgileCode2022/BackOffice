@@ -2,9 +2,9 @@
 
     require $_SERVER['DOCUMENT_ROOT'] ."/BackOffice/utils/autoload.php";
 
-    const IP_DB = "127.0.0.1";
-    const USER_DB = "root";
+    const IP_DB = "";
+    const USER_DB = "";
     const PASS_DB = "";
-    const NAME_DB = "Prueba";
-    const PORT_DB = "3306";
+    const NAME_DB = "";
+    const PORT_DB = "";
    
